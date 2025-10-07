@@ -1,0 +1,114 @@
+    :root {
+        --c-dark: #0f172a;
+        /* modro-čierna */
+        --c-cream: #F4E7C3;
+        /* krémové pozadie sekcie */
+        --c-sky: #a6d3de;
+        /* modrastá sekcia iniciatív */
+        --c-accent: #ffe24d;
+        /* žlté CTA */
+        --c-body: #475569;
+    }
+
+    html,
+    body {
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: var(--c-dark);
+    }
+
+    .nav-link {
+        font-weight: 600
+    }
+
+    .hero {
+        position: relative;
+        background: #111827 url('../../img/Patrik_Ondrejech_Hero.png') center/cover no-repeat;
+        min-height: 70vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-size: 80px;
+            font-weight: 400 !important;
+            line-height: 100px !important;
+        }
+    }
+
+    .hero-overlay {
+        background: radial-gradient(ellipse at 20% 30%, rgba(0, 0, 0, .55), rgba(0, 0, 0, .75));
+        position: absolute;
+        inset: 0
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2
+    }
+
+    .hero h1 {
+        font-weight: 800;
+        line-height: 1.07
+    }
+
+    .eyebrow {
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        font-size: .8rem;
+        opacity: .9
+    }
+
+    .section-cream {
+        background: var(--c-cream)
+    }
+
+    .section-sky {
+        background: var(--c-sky)
+    }
+
+    .btn-cta {
+        background: var(--c-accent);
+        color: #000;
+        font-weight: 700
+    }
+
+    .btn-cta:hover {
+        filter: brightness(.95);
+        color: #000
+    }
+
+    .lead-tight {
+        line-height: 1.5
+    }
+
+    .kicker {
+        color: #0ea5b7;
+        font-weight: 700
+    }
+
+    .initiative-card .card-img-top {
+        aspect-ratio: 16/9;
+        object-fit: cover
+    }
+
+    footer {
+        background: #0b1220;
+        color: #cbd5e1
+    }
+
+    footer a {
+        color: #e2e8f0;
+        text-decoration: none
+    }
+
+    footer a:hover {
+        text-decoration: underline
+    }
+
+
+    /* helper class */
+    .text-cream {
+        color: var(--c-cream) !important;
+    }
