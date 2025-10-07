@@ -13,35 +13,36 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans:wght@400;&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 bg-transparent pt-5">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Patrik Ondrejech</a>
+      <a class="navbar-brand fw-bold text-white" href="#">Paťo Ondrejech</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
         aria-expanded="false" aria-label="Menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#pribeh">Domov</a></li>
-          <li class="nav-item"><a class="nav-link" href="#iniciativy">Môj príbeh</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vyzva">Chcem sa pridať</a></li>
+          <li class="nav-item pe-5"><a class="nav-link text-white" href="#pribeh">Domov</a></li>
+          <li class="nav-item pe-5"><a class="nav-link text-white" href="#iniciativy">Môj príbeh</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#vyzva">Voľby 2026</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="hero">
+  <header class="hero home">
     <div class="hero-overlay"></div>
     <div class="container hero-content py-5">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-6">
-          <h1 class="display-4 mb-4">Spájam ľudí a nápady pre <span class="text-cream">Trnavu zajtrajška</span></h1>
+        <div class="col-12 col-lg-8">
+          <h1 class="display-4 fw-normal">Spájam ľudí a nápady pre <span class="text-cream">Trnavu
+              zajtrajška</span></h1>
         </div>
       </div>
     </div>
@@ -52,21 +53,21 @@
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-6">
-          <p>Som mladý právnik a lokálpatriot z Trnavy, ktorý sa už takmer 10 rokov venuje projektom pre rozvoj nášho
-            mesta a regiónu. Napriek mladému veku mám za sebou skúsenosti z vedenia viacerých európskych projektov a
-            spoluprác s inštitúciami v Bruseli aj úspechy na svetových súťažiach v medzinárodnom práve.</p>
-          <p>Všetko, čo robím, má spoločný cieľ – spájať ľudí a nápady tak, aby sme spoločne vytvorili Trnavu, na ktorú
-            budeme hrdí.</p>
-          <a class="btn btn-cta" href="#vyzva">Poďme sa rozprávať</a>
+          <p class="fw-normal text-orange">Som mladý právnik a lokálpatriot z Trnavy, ktorý sa už takmer 10 rokov venuje
+            projektom
+            pre rozvoj nášho
+            mesta a regiónu. Napriek mladému veku mám za sebou skúsenosti z vedenia veľkých európskych projektov,
+            spoluprácu s inštitúciami v Bruseli aj úspechy na svetových súťažiach v medzinárodnom práve. Všetko, čo
+            robím, má spoločný cieľ – spájať ľudí a ich nápady tak, aby sme spoločne vytvorili Trnavu, na ktorú budeme
+            hrdí.</p>
+          <a class="btn btn-cta btn-lg fw-normal mt-4" href="#vyzva">Prečítaj si môj príbeh</a>
         </div>
         <div class="col-lg-6">
-          <div class="p-4 bg-white rounded-4 shadow-sm">
-            <h5 class="kicker mb-3">Vízia</h5>
-            <p class="mb-2">Verím, že Trnava má obrovský potenciál byť mestom, kde sa stretáva tradícia s inováciou.</p>
-            <p class="mb-2">Komunitas a otvorenosť sú každodenným životom a odvážnymi víziami.</p>
-            <p class="mb-0">Ak dnes urobíme moderné, férové a udržateľné rozhodnutia, mesto zajtrajška môžeme tvoriť
-              spoločne už dnes.</p>
-          </div>
+          <p class="fw-normal text-sky-light">
+            Verím, že Trnava má obrovský potenciál byť mestom, kde sa stretáva tradícia s inováciou, komunita s
+            otvorenosťou a každodenný život s odvážnymi víziami. Mojou ambíciou je ukázať, že aj u nás sa dajú robiť
+            veci moderne, férovo a s chuťou – a že budúcnosť mesta môžeme tvoriť spoločne už dnes.
+          </p>
         </div>
       </div>
     </div>
@@ -74,23 +75,21 @@
 
   <!-- Initiatives -->
   <section id="iniciativy" class="section-sky py-5">
-    <div class="container">
+    <div class="container pb-4 pt-4">
       <div class="d-flex align-items-end justify-content-between mb-4">
-        <h2 class="mb-0">Iniciatívy</h2>
-        <small class="text-muted">Pravidelné projekty a série</small>
+        <h2 class="mb-0 text-white">Iniciatívy</h2>
       </div>
 
-      <div class="row g-4">
+      <div class="row g-3 gy-4">
         <!-- Card 1 -->
         <div class="col-md-6 col-lg-4">
           <div class="card initiative-card h-100 shadow-sm border-0">
             <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0b5?q=80&w=1600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop"
               alt="Podcast Naša Trnava">
-            <div class="card-body">
-              <h5 class="card-title">Podcast Naša Trnava</h5>
+            <div class="card-body pb-5">
+              <h5 class="card-title text-sky-light mb-3">Podcast Naša Trnava</h5>
               <p class="card-text">Rozhovory s ľuďmi, ktorí menia naše mesto a prinášajú inšpiratívne príbehy.</p>
-              <a href="#" class="link-dark fw-semibold">Počúvať epizódy →</a>
             </div>
           </div>
         </div>
@@ -98,12 +97,11 @@
         <div class="col-md-6 col-lg-4">
           <div class="card initiative-card h-100 shadow-sm border-0">
             <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1553531384-397c80973a05?q=80&w=1600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop"
               alt="3 dobré správy">
-            <div class="card-body">
-              <h5 class="card-title">3 dobré správy</h5>
+            <div class="card-body pb-5">
+              <h5 class="card-title text-sky-light">3 dobré správy</h5>
               <p class="card-text">Každý týždeň sumarizujem tri pozitívne novinky z nášho regiónu.</p>
-              <a href="#" class="link-dark fw-semibold">Čítať novinky →</a>
             </div>
           </div>
         </div>
@@ -113,10 +111,9 @@
             <img class="card-img-top"
               src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1600&auto=format&fit=crop"
               alt="50 nápadov pre Trnavu">
-            <div class="card-body">
-              <h5 class="card-title">50 nápadov pre Trnavu</h5>
+            <div class="card-body pb-5">
+              <h5 class="card-title text-sky-light">50 nápadov pre Trnavu</h5>
               <p class="card-text">Pravidelne prinášam premyslené návrhy, ako môže naše mesto lepšie fungovať.</p>
-              <a href="#" class="link-dark fw-semibold">Pozrieť nápady →</a>
             </div>
           </div>
         </div>
@@ -126,10 +123,9 @@
             <img class="card-img-top"
               src="https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?q=80&w=1600&auto=format&fit=crop"
               alt="Business brunch">
-            <div class="card-body">
-              <h5 class="card-title">Trnavský business brunch</h5>
+            <div class="card-body pb-5">
+              <h5 class="card-title text-sky-light">Trnavský business brunch</h5>
               <p class="card-text">Stretnutia podnikateľov a profíkov – nápady, kontakty a spolupráca.</p>
-              <a href="#" class="link-dark fw-semibold">Prihlásiť sa →</a>
             </div>
           </div>
         </div>
@@ -139,10 +135,9 @@
             <img class="card-img-top"
               src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1600&auto=format&fit=crop"
               alt="Dosty a Trnava">
-            <div class="card-body">
-              <h5 class="card-title">Dosty a Trnava</h5>
+            <div class="card-body pb-5">
+              <h5 class="card-title text-sky-light">Dosty a Trnava</h5>
               <p class="card-text">Foodblog – lokálne tipy na skvelé jedlo a ľudí, ktorí za ním stoja.</p>
-              <a href="#" class="link-dark fw-semibold">Objavovať →</a>
             </div>
           </div>
         </div>
@@ -152,10 +147,9 @@
             <img class="card-img-top"
               src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop"
               alt="Ako funguje mesto?">
-            <div class="card-body">
-              <h5 class="card-title">Ako funguje mesto?</h5>
+            <div class="card-body pb-5">
+              <h5 class="card-title text-sky-light">Ako funguje mesto?</h5>
               <p class="card-text">Vysvetľujem zložité témy zrozumiteľne – aby malo viac ľudí chuť zapojiť sa.</p>
-              <a href="#" class="link-dark fw-semibold">Čítať seriál →</a>
             </div>
           </div>
         </div>
@@ -164,39 +158,42 @@
   </section>
 
   <!-- CTA / New path -->
-  <section id="vyzva" class="py-5">
-    <div class="container">
-      <div class="row g-5 align-items-center">
+  <section id="vyzva" class="section-stone py-5">
+    <div class="container pb-4 pt-4">
+      <div class="row g-5">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <h2 class="display-3">Nová cesta pre Trnavu zajtrajška</h2>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-6">
-          <h2 class="display-6">Nová cesta pre Trnavu zajtrajška</h2>
-          <p>Dávam dokopy tím ľudí, ktorí majú chuť robiť pre Trnavu viac – prinášať nové nápady, prototypovať ich do
-            reálnych projektov a otvárať mesto všetkým, ktorí tu žijú.</p>
-          <p>Ak máš chuť pridať ruku k dielu, napíš mi pár slov o sebe a čomu by si sa chcel/a venovať.</p>
-          <a href="#kontakt" class="btn btn-cta btn-lg">Poďme sa rozprávať</a>
+          <p class="text-white">
+            Dávam dokopy tím ľudí, ktorí majú chuť robiť pre Trnavu ešte viac – prinášať nové nápady,
+            pretavovať ich do reálnych projektov a otvárať mesto všetkým, ktorí tu žijú.
+            Naša sila je v spolupráci: každý hlas, každá skúsenosť a každý nápad môže prispieť k tomu,
+            aby bola Trnava mestom, kde sa dobre žije.
+          </p>
+          <a href="#kontakt" class="btn btn-cta btn-lg mt-5">Poďme sa rozprávať</a>
+        </div>
+        <div class="col-lg-6">
+          <p class="text-white">
+            Trnava nie je len miesto, kde žijeme. Je to priestor, ktorý môžeme spoločne pretvoriť
+            na moderné, férové a inšpiratívne mesto pre každého – mladých aj starších, rodiny aj jednotlivcov,
+            dnešných aj budúcich Trnavčanov.
+          </p>
+          <p class="text-white">
+            Preto vzniká iniciatíva <strong>Trnava+</strong>: Mesto pre všetkých.
+            Viac o nej už čoskoro.
+          </p>
         </div>
       </div>
     </div>
-    </div>
   </section>
 
-  <footer class="py-4">
-    <div
-      class="container d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-start align-items-lg-center">
-      <div>
-        <strong>Patrik Ondrejech</strong><br>
-        <small>© <span id="y"></span> Trnava zajtrajška</small>
-      </div>
-      <div class="d-flex gap-3">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-      </div>
-    </div>
-  </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
