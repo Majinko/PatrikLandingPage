@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# 1️⃣ Skry .html z URL (napr. /about.html → /about)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# 2️⃣ Presmeruj /about.html → /about (aby sa používala jednotná verzia)
+RewriteCond %{THE_REQUEST} "^[A-Z]{3,9}\ /([^/]+)\.html\ HTTP/"
+RewriteRule ^([^/]+)\.html$ /$1 [R=301,L]
