@@ -3,7 +3,7 @@
   --c-dark: #0f172a;
   --c-cream: #F4E7C3;
   --c-sky: #a6d3de;
-  --c-accent: #ffe24d;
+  --c-accent: #FFF700;
   --c-body: #475569;
   --c-orange: #FC6400;
   --c-sky-light: #86C9D3;
@@ -86,6 +86,9 @@ nav {
 .hero.my-story {
   background: var(--c-stone) url("../../img/Patrik_Ondrejech_Story.png") left/contain no-repeat;
 }
+.hero.elections-2026 {
+  background: #111827 url("../../img/Patrik_Ondrejech_Elections.png") center/cover no-repeat;
+}
 .hero h1 {
   font-size: 80px;
   font-weight: 400 !important;
@@ -97,6 +100,9 @@ nav {
   line-height: 80px !important;
   font-size: 60px;
   top: 50px;
+}
+.hero h1.elections-2026 {
+  top: inherit;
 }
 .hero .hero-overlay {
   background: radial-gradient(ellipse at 20% 30%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25));
@@ -172,6 +178,60 @@ nav {
   color: var(--c-muted);
 }
 
+/* === Reasons === */
+.reasons {
+  color: #fff;
+  padding-block: 2rem;
+}
+.reasons .reason {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.reasons .reason:last-child {
+  margin-bottom: 0;
+}
+.reasons .reason-num {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--c-sky);
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 80px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.reasons .reason-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  max-width: 45ch;
+}
+.reasons .reason-text {
+  line-height: 1.65;
+  margin: 0;
+  max-width: 60ch;
+}
+@media (max-width: 991.98px) {
+  .reasons .reason {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .reasons .reason-num {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 1.5rem;
+  }
+  .reasons .reason-title {
+    font-size: 1.4rem;
+  }
+}
+
 /* === Footer === */
 footer {
   background: #0b1220;
@@ -204,4 +264,8 @@ footer a:hover {
 
 .bg-cream {
   background: var(--c-cream);
+}
+
+.display-7 {
+  font-size: 1.5rem;
 }
