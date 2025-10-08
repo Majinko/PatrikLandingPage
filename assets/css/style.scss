@@ -77,10 +77,28 @@ img {
     }
 }
 
+.navbar-toggler {
+    border: 0;
+    box-shadow: none !important;
+    outline: none !important;
+
+    &:focus,
+    &:focus-visible {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+}
+
 
 /* === Nav === */
 nav {
     z-index: 1;
+
+    .active {
+        a {
+            text-decoration: underline;
+        }
+    }
 }
 
 /* === Hero === */
@@ -174,7 +192,7 @@ nav {
 .btn-cta {
     background: var(--c-accent);
     color: #000;
-    font-weight: 700;
+    font-weight: 500 !important;
 
     &:hover {
         filter: brightness(.95);
@@ -309,3 +327,30 @@ footer {
 .display-7 {
     font-size: 1.5rem;
 }
+
+
+/* === Response === */
+/* === Extra small (xs) – max-width: 575.98px === */
+@media (max-width: 575.98px) {}
+
+/* === Small (sm) – max-width: 767.98px === */
+@media (max-width: 767.98px) {
+    .hero {
+
+        min-height: max(70vh, 500px);
+
+        h1 {
+            font-size: 50px;
+            line-height: 60px !important;
+        }
+    }
+}
+
+/* === Medium (md) – max-width: 991.98px === */
+@media (max-width: 991.98px) {}
+
+/* === Large (lg) – max-width: 1199.98px === */
+@media (max-width: 1199.98px) {}
+
+/* === Extra large (xl) – max-width: 1399.98px === */
+@media (max-width: 1399.98px) {}
