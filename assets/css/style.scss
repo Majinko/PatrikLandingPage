@@ -23,6 +23,18 @@ body {
 img {
     max-width: 100%;
     height: auto;
+
+    &.max-width-300 {
+        max-width: 300;
+    }
+
+    &.max-width-400 {
+        max-width: 400;
+    }
+
+    &.max-width-500 {
+        max-width: 500;
+    }
 }
 
 .photo-tag {
@@ -180,14 +192,6 @@ nav {
     background: var(--c-stone);
 }
 
-.section-story {
-    background: var(--c-cream);
-
-    img {
-        max-width: 300px;
-    }
-}
-
 /* === Buttons === */
 .btn-cta {
     background: var(--c-accent);
@@ -335,24 +339,64 @@ footer {
 @media (max-width: 575.98px) {}
 
 /* === Small (sm) – max-width: 767.98px === */
-@media (max-width: 767.98px) {
-    .hero {
-
-        min-height: max(70vh, 500px);
-
-        h1 {
-            top: 100px;
-            font-size: 50px;
-            line-height: 60px !important;
-        }
-    }
-}
+@media (max-width: 767.98px) {}
 
 /* === Medium (md) – max-width: 991.98px === */
 @media (max-width: 991.98px) {}
 
 /* === Large (lg) – max-width: 1199.98px === */
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    .photo-rectangle {
+        &::before {
+            top: -20px;
+            right: -10px;
+            width: 160px;
+            height: 80px;
+        }
+
+
+        &.top-right {
+            &::before {
+                left: -20px;
+                top: -20px;
+            }
+        }
+
+        &.bootom-left {
+            &::before {
+                left: -30px;
+            }
+        }
+    }
+
+
+    .hero {
+        min-height: max(75vh, 500px);
+
+        &.my-story {
+            background: var(--c-stone) url('../../img/Patrik_Ondrejech_Story.png') left/cover no-repeat;
+        }
+
+        h1 {
+            top: 100px;
+            font-size: 50px;
+            line-height: 60px !important;
+
+            &.my-story {
+                line-height: 50px !important;
+                font-size: 35px;
+                top: 130px;
+            }
+        }
+    }
+
+
+    .my-story {
+        img {
+            max-width: 85%;
+        }
+    }
+}
 
 /* === Extra large (xl) – max-width: 1399.98px === */
 @media (max-width: 1399.98px) {}
