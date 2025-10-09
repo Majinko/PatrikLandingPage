@@ -1,10 +1,17 @@
+# Vypni obsahovú negociáciu, aby sa neplietla do prepisovania
+Options -MultiViews
+
 RewriteEngine On
 
-# 1️⃣ Skry .html z URL (napr. /about.html → /about)
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^([^/]+)/?$ $1.html [L]
+# 1) Redirect: /nieco.html  ->  /nieco  (kanonická URL)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
 
-# 2️⃣ Presmeruj /about.html → /about (aby sa používala jednotná verzia)
-RewriteCond %{THE_REQUEST} "^[A-Z]{3,9}\ /([^/]+)\.html\ HTTP/"
-RewriteRule ^([^/]+)\.html$ /$1 [R=301,L]
+# (voliteľné) /index.html -> /
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 2) Interný rewrite: /nieco  ->  /nieco.html  (ak existuje súbor)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
