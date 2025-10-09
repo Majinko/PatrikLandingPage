@@ -89,7 +89,7 @@ img.max-width-500 {
 
 /* === Nav === */
 nav {
-  z-index: 1;
+  z-index: 9999;
 }
 nav .active a {
   text-decoration: underline;
