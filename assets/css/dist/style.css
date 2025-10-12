@@ -322,6 +322,10 @@ footer a:hover {
     font-size: 35px;
     top: 130px;
   }
+  .hero h1.elections-2026 {
+    font-size: 35px;
+    top: 90px;
+  }
   .my-story img {
     max-width: 85%;
   }
