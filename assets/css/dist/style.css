@@ -110,7 +110,7 @@ nav .active a {
   background: var(--c-stone) url("../../img/Patrik_Ondrejech_Story.png") left/contain no-repeat;
 }
 .hero.elections-2026 {
-  background: #111827 url("../../img/Patrik_Ondrejech_Elections.png") center/cover no-repeat;
+  background: #111827 url("../../img/Patrik_Ondrejech_Elections.png") center top/cover no-repeat;
 }
 .hero h1 {
   font-size: 80px;
@@ -325,6 +325,7 @@ footer a:hover {
     top: 130px;
   }
   .hero h1.elections-2026 {
+    line-height: 50px !important;
     font-size: 35px;
     top: 90px;
   }
