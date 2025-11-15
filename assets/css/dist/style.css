@@ -104,13 +104,13 @@ nav .active a {
   align-items: center;
 }
 .hero.home {
-  background: #111827 url("../../img/Patrik_Ondrejech_Hero.png") center/cover no-repeat;
+  background: #111827 url("../../img/Patrik_Ondrejech_Hero.webp") center/cover no-repeat;
 }
 .hero.my-story {
-  background: var(--c-stone) url("../../img/Patrik_Ondrejech_Story.png") left/contain no-repeat;
+  background: var(--c-stone) url("../../img/Patrik_Ondrejech_Story.webp") left/contain no-repeat;
 }
 .hero.elections-2026 {
-  background: #111827 url("../../img/Patrik_Ondrejech_Elections.png") center top/cover no-repeat;
+  background: #111827 url("../../img/Patrik_Ondrejech_Elections.webp") center top/cover no-repeat;
 }
 .hero h1 {
   font-size: 80px;
@@ -312,7 +312,7 @@ footer a:hover {
     min-height: max(75vh, 500px);
   }
   .hero.my-story {
-    background: var(--c-stone) url("../../img/Patrik_Ondrejech_Story.png") left/cover no-repeat;
+    background: var(--c-stone) url("../../img/Patrik_Ondrejech_Story.webp") left/cover no-repeat;
   }
   .hero h1 {
     top: 100px;
